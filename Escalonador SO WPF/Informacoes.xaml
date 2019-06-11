@@ -1,0 +1,152 @@
+﻿<Window x:Class="Escalonador_SO_WPF.Informacoes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Escalonador_SO_WPF"
+        mc:Ignorable="d"
+        Title="Informacoes" Height="748" Width="1209">
+    <Grid Margin="0,0,2,2">
+        <Label Content="CPU 0" FontSize="30" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Estado:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Name="label_Estado_CPU_0" Content="mostra estado atual" HorizontalAlignment="Left" Margin="63,65,0,0" VerticalAlignment="Top" FontSize="15"/>
+        
+        <Label Content="CPU 1" FontSize="30" HorizontalAlignment="Left" Margin="29,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.491,0.707"/>
+        <Label Content="Estado:" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Name="label_Estado_CPU_1" Content="mostra estado atual" HorizontalAlignment="Left" Margin="64,161,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+        <Label Content="Fila Prioridade 1" HorizontalAlignment="Left" Margin="245,10,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 2" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 3" HorizontalAlignment="Left" Margin="879,10,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 4" HorizontalAlignment="Left" Margin="245,184.997,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 5" HorizontalAlignment="Left" Margin="562,184.997,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 6" HorizontalAlignment="Left" Margin="879,184.997,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 7" HorizontalAlignment="Left" Margin="245,359.994,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 8" HorizontalAlignment="Left" Margin="562,359.994,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 9" HorizontalAlignment="Left" Margin="879,359.994,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prioridade 10" HorizontalAlignment="Left" Margin="245,534.991,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Prontos" HorizontalAlignment="Left" Margin="562,534.991,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Fila Suspensas" HorizontalAlignment="Left" Margin="879,534.991,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+        <ListView Name="listViewPrioridade1" HorizontalAlignment="Left" Height="135.047" Margin="246,44.95,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade2" HorizontalAlignment="Left" Height="135.047" Margin="562,44.95,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade3" HorizontalAlignment="Left" Height="135.047" Margin="879,44.95,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade4" HorizontalAlignment="Left" Height="135.047" Margin="245,219.947,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade5" HorizontalAlignment="Left" Height="135.047" Margin="562,219.947,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade6" HorizontalAlignment="Left" Height="135.047" Margin="879,219.947,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade7" HorizontalAlignment="Left" Height="135.047" Margin="245,394.944,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade8" HorizontalAlignment="Left" Height="135.047" Margin="562,394.944,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade9" HorizontalAlignment="Left" Height="135.047" Margin="879,394.944,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewPrioridade10" HorizontalAlignment="Left" Height="135.047" Margin="245,569.941,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewProntos" HorizontalAlignment="Left" Height="135.047" Margin="562,569.941,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="listViewSuspensos" HorizontalAlignment="Left" Height="135.047" Margin="879,569.941,0,0" VerticalAlignment="Top" Width="312">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" Width="45" DisplayMemberBinding="{Binding PID}" />
+                    <GridViewColumn Header="Nome" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Prioridade" Width="80" DisplayMemberBinding="{Binding Prioridade}" />
+                    <GridViewColumn Header="Qtde. Ciclos" Width="80" DisplayMemberBinding="{Binding QtdeCiclos}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
